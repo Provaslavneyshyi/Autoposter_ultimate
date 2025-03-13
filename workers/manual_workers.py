@@ -7,6 +7,7 @@ from services.openai_service import generate_article_text, generate_image
 from services.markdown_converter import format_text_to_html
 from services.wordpress import publish_article
 from data.data_manager import save_data
+from utils.helpers import extract_title_from_html
 
 class ManualGenerationWorker(QThread):
     log_signal = pyqtSignal(str)
@@ -79,13 +80,7 @@ class ManualGenerationWorker(QThread):
             time.sleep(0.1)
 
     def extract_title(self, html):
-        pattern = re.compile(r'<h[1-6]>(.*?)</h[1-6]>', re.IGNORECASE)
-        match = pattern.search(html)
-        if match:
-            title = match.group(1).strip()
-            if title:
-                return title
-        return "Без заголовка"
+        return extract_title_from_html(html)
 
 
 class ManualPostingWorker(QThread):

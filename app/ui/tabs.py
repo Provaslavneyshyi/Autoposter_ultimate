@@ -4,7 +4,9 @@ from PyQt5.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, QLabel, QComboBo
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtWidgets import QSizePolicy
 from data.data_manager import save_data
-import Scripts  # Пока оставляем для вызова генерации и публикации через функции из сервиса
+from services.openai_service import generate_article_text, generate_image
+from services.markdown_converter import format_text_to_html
+from services.wordpress import publish_article
 from utils.helpers import extract_title_from_html
 
 class ContentTab(QWidget):
@@ -112,7 +114,8 @@ class ContentTab(QWidget):
             self.log_callback("Ошибка: не добавлен ни один API-ключ.")
             return
         api_key = api_keys[0]
-        article_text = Scripts.generate_article_text(api_key, prompt, self.log_callback)
+        article_text = generate_article_text(api_key, prompt, self.log_callback)
+        html_text = format_text_to_html(article_text, self.log_callback)
         if not article_text:
             return
         html_text = Scripts.format_text_to_html(article_text, self.log_callback)
@@ -126,7 +129,7 @@ class ContentTab(QWidget):
             if not img_prompt:
                 img_prompt = prompt
             self.log_callback("Генерация изображения с промптом: " + img_prompt)
-            image = Scripts.generate_image(api_key, img_prompt, self.log_callback)
+            image = generate_image(api_key, img_prompt, self.log_callback)
             if image:
                 self.imageLabel.setPixmap(image.scaled(self.imageLabel.size()))
                 self.log_callback("Изображение сгенерировано.")
@@ -561,11 +564,29 @@ class PromptsTab(QWidget):
         layout = QVBoxLayout()
         layout.addWidget(QLabel("Управление промптами статей:"))
         self.promptsEdit = QTextEdit()
+        self.concatBtn = QPushButton("Склеить промпты")
+        self.concatBtn.clicked.connect(self.open_concatenate_dialog)
+        layout.addWidget(self.concatBtn)
         self.promptsEdit.setReadOnly(True)
         self.update_prompts_display()
         layout.addWidget(self.promptsEdit)
         self.setLayout(layout)
 
+
     def update_prompts_display(self):
         text = "\n".join(self.data.get("prompts", []))
         self.promptsEdit.setPlainText(text)
+
+    def open_concatenate_dialog(self):
+        from .concatenate_prompts_dialog import ConcatenatePromptsDialog
+        dialog = ConcatenatePromptsDialog(self.data.get("prompts", []), self)
+        if dialog.exec_():
+            concatenated = dialog.get_result()
+            self.log_callback("Склеенный промпт: " + concatenated)
+            self.data["prompts"].append(concatenated)
+            self.update_prompts_display()
+            # Обновляем выпадающий список во вкладке генерации статьи
+            main_window = self.parent().parent()  # Предполагается, что структура: MainWindow -> QTabWidget -> PromptsTab
+            if hasattr(main_window, 'content_tab'):
+                main_window.content_tab.update_prompts()
+                main_window.content_tab.templateCombo.setCurrentIndex(main_window.content_tab.templateCombo.count() - 1)

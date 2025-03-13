@@ -297,6 +297,7 @@ class MassProjectTab(QWidget):
     def handle_auto_stop(self):
         for url, worker in self.auto_workers.items():
             worker.stop()
+            worker.wait()  # Ждем, пока поток корректно завершится
             self.append_log(f"На профиль {url}: Авто-генерация и постинг остановлены.")
         self.auto_workers.clear()
         self.refresh_profile_list()

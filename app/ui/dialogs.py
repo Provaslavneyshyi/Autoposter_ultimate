@@ -8,6 +8,7 @@ class AddProfileDialog(QDialog):
         self.urlEdit = QLineEdit()
         self.loginEdit = QLineEdit()
         self.appPasswordEdit = QLineEdit()
+        self.appPasswordEdit.setEchoMode(QLineEdit.Password)
         self.layout.addRow("URL сайта:", self.urlEdit)
         self.layout.addRow("Логин:", self.loginEdit)
         self.layout.addRow("Application Password:", self.appPasswordEdit)
@@ -26,6 +27,7 @@ class EditProfileDialog(QDialog):
         self.urlEdit = QLineEdit()
         self.loginEdit = QLineEdit()
         self.appPasswordEdit = QLineEdit()
+        self.appPasswordEdit.setEchoMode(QLineEdit.Password)
         if profile:
             self.urlEdit.setText(profile.get("url", ""))
             self.loginEdit.setText(profile.get("login", ""))
