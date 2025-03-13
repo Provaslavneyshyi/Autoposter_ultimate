@@ -1,0 +1,5 @@
+schedule~=1.2.2
+PyQt5~=5.15.11
+requests~=2.32.3
+openai~=1.66.3
+Markdown~=3.7

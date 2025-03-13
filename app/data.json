@@ -1,0 +1,112 @@
+{
+    "profiles": [
+        {
+            "url": "https://pricedupsite.online/",
+            "login": "seohuntercall@gmail.com",
+            "app_password": "P5XT F8Rs pgr1 KYLN RL1m svSb",
+            "selected": true
+        }
+    ],
+    "api_keys": [
+        "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"
+    ],
+    "categories": [
+        "Sportsbook"
+    ],
+    "prompts": [
+        "Писать нужно только строго статью, вводные слова и твои ответы писать запрещается,  только текст статьи. Напиши статью посвященную спортивным ставкам для случайно выбранного букмекера из топ 100 самых популярных букмекеров на 2000 символов без учета пробелов.\\n\\t\\tТребования к форматированию статьи\\n                1.Заголовок (H1): Убедитесь, что заголовки уникальны и соответствуют актуальным трендам.\\n                2. Подзаголовки H2 / H3: Структурируйте контент в SEO-оптимизированном формате.\\n                3. Структура статьи (улучшенная читаемость)\\n                Введение\\n\\n                Переходите сразу к сути, избегая излишнего фона.\\n                Используйте вопросы-завлекалки или данные о рыночных трендах для вовлечения читателей.\\n                Основное содержание\\n\\n                Включайте минимум три ключевых знания для обеспечения глубины контента.\\n                Балансируйте короткие и длинные предложения для лучшего восприятия.\\n                Заключение\\n                \\n                Избегайте шаблонных AI-резюме; вместо этого предоставляйте полезные выводы или конкретные рекомендации.\\n                При необходимости включайте CTA (Призыв к действию).\\n                HTML-форматирование\\n                Убедитесь, что статья правильно структурирована в формате HTML:\\n                \\n                Заголовки: Используйте <h1>, <h2>, <h3> соответственно.\\n                Параграфы: Оформляйте текст в <p>.\\n                Выделенные слова: Используйте <strong> для выделения ключевых терминов.\\n                Списки: Используйте <ul> и <li> для маркированных списков.\\n                Генерируйте чистый, хорошо структурированный текст вместо обычного неформатированного текста.\\n                Вступительные теги писать не нужно, все теги нужно указывать только в тексте, \\\"```html\\\" - так же полностью исключи из статьи. Важно: Пожалуйста, сгенерируй статью, где первым элементом будет заголовок, оформленный тегом <h1>. Заголовок должен отражать основную тему статьи."
+    ],
+    "image_prompts": [],
+    "published_articles": [
+        {
+            "title": "Спортивные ставки на платформе Bet365: Анализ и рекомендации",
+            "link": "https://pricedupsite.online/%d1%81%d0%bf%d0%be%d1%80%d1%82%d0%b8%d0%b2%d0%bd%d1%8b%d0%b5-%d1%81%d1%82%d0%b0%d0%b2%d0%ba%d0%b8-%d0%bd%d0%b0-%d0%bf%d0%bb%d0%b0%d1%82%d1%84%d0%be%d1%80%d0%bc%d0%b5-bet365-%d0%b0%d0%bd%d0%b0%d0%bb/",
+            "profile_url": "https://pricedupsite.online/",
+            "timestamp": 1741905466.677977
+        },
+        {
+            "title": "Спортивные ставки с букмекером Bet365: Ваш путь к успеху",
+            "link": "https://pricedupsite.online/%d1%81%d0%bf%d0%be%d1%80%d1%82%d0%b8%d0%b2%d0%bd%d1%8b%d0%b5-%d1%81%d1%82%d0%b0%d0%b2%d0%ba%d0%b8-%d1%81-%d0%b1%d1%83%d0%ba%d0%bc%d0%b5%d0%ba%d0%b5%d1%80%d0%be%d0%bc-bet365-%d0%b2%d0%b0%d1%88-%d0%bf/",
+            "profile_url": "https://pricedupsite.online/",
+            "timestamp": 1741906099.041964
+        },
+        {
+            "title": "Спортивные ставки с букмекером Bet365: опыт и советы",
+            "link": "https://pricedupsite.online/%d1%81%d0%bf%d0%be%d1%80%d1%82%d0%b8%d0%b2%d0%bd%d1%8b%d0%b5-%d1%81%d1%82%d0%b0%d0%b2%d0%ba%d0%b8-%d1%81-%d0%b1%d1%83%d0%ba%d0%bc%d0%b5%d0%ba%d0%b5%d1%80%d0%be%d0%bc-bet365-%d0%be%d0%bf%d1%8b%d1%82/",
+            "profile_url": "https://pricedupsite.online/",
+            "timestamp": 1741906113.7687554
+        },
+        {
+            "title": "Спортивные ставки с букмекером Bet365: что важно знать",
+            "link": "https://pricedupsite.online/%d1%81%d0%bf%d0%be%d1%80%d1%82%d0%b8%d0%b2%d0%bd%d1%8b%d0%b5-%d1%81%d1%82%d0%b0%d0%b2%d0%ba%d0%b8-%d1%81-%d0%b1%d1%83%d0%ba%d0%bc%d0%b5%d0%ba%d0%b5%d1%80%d0%be%d0%bc-bet365-%d1%87%d1%82%d0%be-%d0%b2/",
+            "profile_url": "https://pricedupsite.online/",
+            "timestamp": 1741906181.0842617
+        },
+        {
+            "title": "Спортивные ставки с букмекером Bet365: возможности и преимущества",
+            "link": "https://pricedupsite.online/%d1%81%d0%bf%d0%be%d1%80%d1%82%d0%b8%d0%b2%d0%bd%d1%8b%d0%b5-%d1%81%d1%82%d0%b0%d0%b2%d0%ba%d0%b8-%d1%81-%d0%b1%d1%83%d0%ba%d0%bc%d0%b5%d0%ba%d0%b5%d1%80%d0%be%d0%bc-bet365-%d0%b2%d0%be%d0%b7%d0%bc/",
+            "profile_url": "https://pricedupsite.online/",
+            "timestamp": 1741906249.5411096
+        },
+        {
+            "title": "Спортивные ставки с букмекерской конторой Bet365: преимущества и возможности",
+            "link": "https://pricedupsite.online/%d1%81%d0%bf%d0%be%d1%80%d1%82%d0%b8%d0%b2%d0%bd%d1%8b%d0%b5-%d1%81%d1%82%d0%b0%d0%b2%d0%ba%d0%b8-%d1%81-%d0%b1%d1%83%d0%ba%d0%bc%d0%b5%d0%ba%d0%b5%d1%80%d1%81%d0%ba%d0%be%d0%b9-%d0%ba%d0%be%d0%bd-2/",
+            "profile_url": "https://pricedupsite.online/",
+            "timestamp": 1741906494.3094068
+        },
+        {
+            "title": "Спортивные ставки в букмекерской конторе Bet365: что нужно знать",
+            "link": "https://pricedupsite.online/%d1%81%d0%bf%d0%be%d1%80%d1%82%d0%b8%d0%b2%d0%bd%d1%8b%d0%b5-%d1%81%d1%82%d0%b0%d0%b2%d0%ba%d0%b8-%d0%b2-%d0%b1%d1%83%d0%ba%d0%bc%d0%b5%d0%ba%d0%b5%d1%80%d1%81%d0%ba%d0%be%d0%b9-%d0%ba%d0%be%d0%bd/",
+            "profile_url": "https://pricedupsite.online/",
+            "timestamp": 1741906494.5065389
+        },
+        {
+            "title": "Спортивные ставки через букмекерскую контору Bet365: что нужно знать",
+            "link": "https://pricedupsite.online/%d1%81%d0%bf%d0%be%d1%80%d1%82%d0%b8%d0%b2%d0%bd%d1%8b%d0%b5-%d1%81%d1%82%d0%b0%d0%b2%d0%ba%d0%b8-%d1%87%d0%b5%d1%80%d0%b5%d0%b7-%d0%b1%d1%83%d0%ba%d0%bc%d0%b5%d0%ba%d0%b5%d1%80%d1%81%d0%ba%d1%83/",
+            "profile_url": "https://pricedupsite.online/",
+            "timestamp": 1741906494.5132015
+        }
+    ],
+    "generated_articles": [
+        {
+            "title": "Спортивные ставки на платформе Bet365: Анализ и рекомендации",
+            "profile_url": "https://pricedupsite.online/",
+            "timestamp": 1741905465.4413974
+        },
+        {
+            "title": "Спортивные ставки с букмекером Bet365: Ваш путь к успеху",
+            "profile_url": "https://pricedupsite.online/",
+            "timestamp": 1741906097.5879693
+        },
+        {
+            "title": "Спортивные ставки с букмекером Bet365: опыт и советы",
+            "profile_url": "https://pricedupsite.online/",
+            "timestamp": 1741906112.2588513
+        },
+        {
+            "title": "Спортивные ставки с букмекером Bet365: что важно знать",
+            "profile_url": "https://pricedupsite.online/",
+            "timestamp": 1741906179.891539
+        },
+        {
+            "title": "Спортивные ставки с букмекером Bet365: возможности и преимущества",
+            "profile_url": "https://pricedupsite.online/",
+            "timestamp": 1741906248.313263
+        },
+        {
+            "title": "Спортивные ставки через букмекерскую контору Bet365: что нужно знать",
+            "profile_url": "https://pricedupsite.online/",
+            "timestamp": 1741906463.4225457
+        },
+        {
+            "title": "Спортивные ставки в букмекерской конторе Bet365: что нужно знать",
+            "profile_url": "https://pricedupsite.online/",
+            "timestamp": 1741906470.2731664
+        },
+        {
+            "title": "Спортивные ставки с букмекерской конторой Bet365: преимущества и возможности",
+            "profile_url": "https://pricedupsite.online/",
+            "timestamp": 1741906480.0406656
+        }
+    ]
+}
